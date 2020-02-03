@@ -1,0 +1,207 @@
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 90%;
+  background-color: transparent;
+  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.app {
+  width: 55%;
+  padding: 30px 20px;
+  background-color: #201E5E;
+  color: #fafafa;
+}
+.app__title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #fafafa;
+}
+.app__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.app__input input {
+  padding: 3px 10px;
+  width: 70%;
+  height: 38px;
+  font-size: 18px;
+  border: 1px solid #53519b;
+  border-radius: 10px;
+  outline: none;
+}
+.btn {
+  width: 120px;
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #53519b;
+  color: #fafafa;
+  border: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.btn:hover {
+  background-color: rgba(83, 81, 155, 0.4);
+}
+.app__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.app__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #53519b;
+  border-radius: 15px;
+}
+.app__list-item label {
+  width: 4%;
+  margin-right: 10px;
+}
+.app__list-item a {
+  width: 7%;
+  text-decoration: none;
+}
+.task-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 89%;
+  padding: 0 7px;
+}
+.hidden {
+  display: none;
+}
+.delete-icon {
+  color: #fafafa;
+}
+.complete {
+  text-decoration: line-through;
+}
+@media (max-width: 800px) {
+  .app__input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .app__input input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .btn {
+    width: 160px;
+  }
+}
+.info {
+  width: 45%;
+  padding: 30px 20px;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+.info__title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #53519b;
+}
+.info__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #53519b;
+}
+.info__img-wrapper {
+  text-align: center;
+}
+.info__img {
+  width: 60%;
+  height: auto;
+}
+.info__list {
+  margin: 20px 20px 10px;
+  padding: 0;
+}
+.info__list-item {
+  padding: 7px 0;
+  color: #53519b;
+  font-size: 18px;
+}
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+.container-flex {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: auto;
+  background: #f95340;
+  background: -webkit-linear-gradient(315deg, #53519b 29%, #fafafa 29%, #fafafa 78%, #ff4631 78%);
+  background: -o-linear-gradient(315deg, #53519b 29%, #fafafa 29%, #fafafa 78%, #ff4631 78%);
+  background: linear-gradient(135deg, #53519b 29%, #fafafa 29%, #fafafa 78%, #ff4631 78%);
+}
+.visually-hidden:not(focus):not(active) {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

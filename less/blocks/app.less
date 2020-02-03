@@ -1,0 +1,120 @@
+.app {
+	width: 55%;
+	padding: 30px 20px;
+	background-color: @dark-blue;
+	color: @base-color;
+
+}
+
+.app__title {
+	margin: 0;
+	margin-bottom: 13px;
+
+	font-size: 28px;
+	font-weight: 400;
+	color: @base-color;
+}
+
+.app__input {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	width: 100%;
+	margin-bottom: 20px;
+
+	input {
+		padding: 3px 10px;
+		width: 70%;
+		height: 38px;
+
+		font-size: 18px;
+
+		border: 1px solid @blue;
+		border-radius: 10px;
+		outline: none;
+	}
+
+}
+
+.btn {
+	width: 120px;
+	margin-left: 20px;
+	padding: 10px;
+	font-size: 16px;
+	background-color: @blue;
+	color: @base-color;
+
+	border: none;
+	border-radius: 20px;
+	box-shadow: 3px 3px 10px rgba(0,0,0, 0.2);
+	outline: none;
+}
+
+.btn:hover {
+	background-color: fade(@blue, 40%);
+}
+
+.app__list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.app__list-item {
+  display: flex;
+  align-items: baseline;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid @blue;
+  border-radius: 15px;
+}
+
+.app__list-item label {
+  width: 4%;
+  margin-right: 10px;
+}
+
+.app__list-item input {
+
+}
+.app__list-item a {
+  width: 7%;
+  text-decoration: none;
+}
+
+.task-text {
+  display: flex;
+  align-items: center;
+  width: 89%;
+  padding: 0 7px;
+}
+.hidden {
+  display: none;
+}
+.delete-icon {
+  color: @base-color;
+}
+.complete {
+  text-decoration: line-through;
+}
+
+@media (max-width: 800px) {
+	.app__input {
+		flex-direction: column;
+		align-items: center;
+
+		input {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+	}
+
+	.btn {
+		width: 160px;
+	}
+}
+
